@@ -12,5 +12,8 @@
   },
   "author": "Juan Ignacio Olguin",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/juani_olguin/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/juani_olguin/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
