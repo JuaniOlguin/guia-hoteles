@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Primer proyecto de Node.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://juani_olguin@bitbucket.org/juani_olguin/guia-hoteles.git"
+  },
+  "author": "Juan Ignacio Olguin",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/juani_olguin/guia-hoteles#readme"
+}
