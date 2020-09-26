@@ -1,0 +1,23 @@
+.jumbotron{
+    background-color: #0d7377;
+    color: white;
+}
+.btn{
+    background-color: #0d7377;
+    color: white;
+    width:100%;
+}
+.btn:hover{
+    background-color: #212121;
+    color: white;
+}
+.pie{
+    display: flex;
+    margin: 0 auto;
+    background-color: #0d7377;
+}
+.redes{
+    text-align: center;
+    text-decoration: none;
+    color: white
+}
