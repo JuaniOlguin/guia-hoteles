@@ -5,7 +5,6 @@
 .card-hotel{
     flex: 1 20vw;
     padding: 10px;
-    
 }
 .btn-card{
     background-color: #0d7377;
@@ -29,7 +28,6 @@
     margin-top: 10px;
 }
 .redes{
-    text-align: center;
     text-decoration: none;
     color: white;
 }
