@@ -2,10 +2,16 @@
     background-color: #0d7377;
     color: white;
 }
-.btn{
+.card-hotel{
+    flex: 1 20vw;
+    padding: 10px;
+    
+}
+.btn-card{
     background-color: #0d7377;
     color: white;
-    width:100%;
+    width: 100%;
+    max-width: 200px;!important
 }
 .btn:hover{
     background-color: #212121;
@@ -15,9 +21,18 @@
     display: flex;
     margin: 0 auto;
     background-color: #0d7377;
+    align-items: center;
+}
+.contRedes{
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
 }
 .redes{
     text-align: center;
     text-decoration: none;
-    color: white
+    color: white;
+}
+.redes:hover{
+    color:white;
 }
