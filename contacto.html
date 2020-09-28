@@ -38,9 +38,53 @@
             </ol>
           </nav>
         <h2 class="display-4">Formas de Contacto</h2><br>
+        <h4>Dejanos tu comentario</h4>
         <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora nemo quod, laborum harum veniam placeat inventore ad ratione tempore dolore fugit voluptatum qui id cupiditate. Ex eaque a rerum.</p>
-        <a href="#" style="color: black"><p><span class="oi oi-envelope-closed" style="padding-right: 8px;"></span>guia-hoteles@email.com</p></a>
-        <p><span class="oi oi-phone"></span> +54 261 1111 111</p>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-lg-4">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre" id="nombre">
+                </div>
+                <div class="form-group col-lg-4">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su apellido" id="apellido">
+                </div>
+                <div class="form-group col-lg-4">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" placeholder="Ingrese su email" id="email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" placeholder="Ingrese su domicilio" id="domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" class="form-control">
+                        <option selected>Mendoza</option>
+                        <option>San Luis</option>
+                        <option>San Juan</option>
+                        <option>La Pampa</option>
+                        <option>La Rioja</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" cols="30" rows="10" placeholder="Ingrese su comentario" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="gridCheck">
+                    <label for="gridCheck" class="form-check-label">Quiero recibir información de Guía Hoteles</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-card">Enviar</button>
+        </form>
     </div>
     <footer class="pie">
         <div class="container-fluid">
