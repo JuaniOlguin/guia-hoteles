@@ -9,15 +9,32 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Guía Hoteles</title>
+    <title>Inicio - Guía Hoteles</title>
   </head>
   <body>
-    
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <a href="index.html" class="navbar-brand">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item active"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="navbar-item"><a href="about.html" class="nav-link">Nosotros</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Contáctenos</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Soporte</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="jumbotron">
         <h1 class="display-4" style="text-align: center;">Hoteles y Turismo</h1>
     </div>
-    <div class="container">
-        <br><br>
+    <div class="container-fluid cuerpo">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item" aria-current="page"><a href="index.html">Inicio</a></li>
+            </ol>
+          </nav>
         <div class="d-flex flex-wrap">
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <h2>Comodidad</h2>
@@ -33,7 +50,6 @@
             </div>
         </div>
         <br><br>
-
         <div class="d-flex flex-wrap">
             <div class="card-hotel d-flex flex-column justify-content-between">
                 <div>

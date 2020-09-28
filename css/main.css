@@ -1,27 +1,57 @@
+.navbar{
+    background-color: #133b5c;
+    width:100%;
+}
+.navbar a,li{
+    color:white;
+}
 .jumbotron{
-    background-color: #0d7377;
+    background-color: #133b5c;
     color: white;
+    margin-bottom: 0;
+    padding-top: 100px
+}
+.cuerpo{
+    background-color: #d9ecf2;
+    margin: 0 auto;
+    padding: 10px 50px 40px 50px;
+    height: auto;
+}
+.breadcrumb-item a{
+    color: #133b5c
 }
 .card-hotel{
     flex: 1 20vw;
     padding: 10px;
+    align-items: center;
+    text-align: center;
 }
 .btn-card{
-    background-color: #0d7377;
+    background-color: #1e5f74;
     color: white;
-    width: 100%;
-    max-width: 200px;!important
+    width: 150px;
+    max-width: 200px;
 }
 .btn:hover{
-    background-color: #212121;
+    background-color: #1d2d50;
     color: white;
 }
 .pie{
     display: flex;
+    width: 100%;
     margin: 0 auto;
-    background-color: #0d7377;
+    background-color: #133b5c;
     align-items: center;
 }
+/*.pie-about{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #133b5c;
+    align-items: center;
+}*/
 .contRedes{
     color: white;
     padding: 10px;
