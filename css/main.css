@@ -9,7 +9,8 @@
     background-color: #133b5c;
     color: white;
     margin-bottom: 0;
-    padding-top: 100px
+    padding-top: 100px;
+    width: 100%;
 }
 .cuerpo{
     background-color: #d9ecf2;
