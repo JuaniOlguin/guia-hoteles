@@ -14,7 +14,7 @@
     border-radius: 0;
 }
 .carousel{
-    height: 55vh;
+    height: 60vh;
     
 }
 .carousel-caption{
@@ -23,13 +23,13 @@
 
 .imagen-carousel{
     object-fit: cover;
-    min-height: 55vh;
-    max-height: 55vh;
+    min-height: 60vh;
+    max-height: 60vh;
 }
 .cuerpo{
     background-color: #d9ecf2;
     margin: 0 auto;
-    padding: 10px 20px 40px 20px;
+    padding: 80px 20px 40px 20px;
     height: auto;
 }
 .cuerpo1{
@@ -37,6 +37,25 @@
     margin: 0 auto;
     padding: 10px 0px 0px 0px;
     height: auto;
+}
+.visita-oficinas{
+    padding-top: 40px;
+}
+.cuerpo2{
+    display: flex;
+    background-color: #d9ecf2;
+    width: 100%;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/img/imagen-oficinas.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
 .breadcrumb-item a{
     color: #133b5c
