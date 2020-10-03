@@ -19,6 +19,9 @@
 .carousel-caption{
     background-color: rgba(0,0,0,0.8);
 }
+.nav-item a,li {
+    color: rgb(46, 46, 46);
+}
 
 .imagen-carousel{
     object-fit: cover;
@@ -39,6 +42,7 @@
 }
 .visita-oficinas{
     padding-top: 40px;
+    margin-bottom: 180px;
 }
 .cuerpo2{
     display: flex;
@@ -55,6 +59,7 @@
     color: white;
     align-items: center;
     justify-content: center;
+    
 }
 .breadcrumb-item a{
     color: #133b5c
