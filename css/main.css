@@ -114,3 +114,18 @@
 .redes:hover{
     color:white;
 }
+.nav-pills .nav-link{
+    background-color: #1e5f74;
+    color:white;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #1d2d50;
+}
+.thead{
+    background-color: #1e5f74;
+    color: white;
+}
+.tab-content{
+    padding-top: 10px;
+}
