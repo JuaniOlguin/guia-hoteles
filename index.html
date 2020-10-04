@@ -80,7 +80,40 @@
         <div class="visita-oficinas"><h1 class="display-1">Visita nuestras oficinas</h1></div>
     </div>
     <div class="container-fluid cuerpo">
-        <div class="d-flex flex-wrap">
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-card" type="button" data-toggle="collapse" data-target="#funciona" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-card" type="button" data-toggle="collapse" data-target="#reservo" aria-controls="multiCollapse2">¿Dónde reservo?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-card" type="button" data-toggle="collapse" data-target="#vence" aria-controls="multiCollapse3">¿Dónde reservo?</button>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
+                <p>
+                    <h4>¿Cómo funciona?</h4>
+                    <p>Seleccioná un hotel de tu interés de nuestra amplia variedad</p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="reservo">
+                <p>
+                    <h4>¿Dónde reservo?</h4>
+                    <p>Al seleccionar un hotel seras dirigido a nuestra sección de reservas</p>
+                </p>
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="vence">
+                <p>
+                    <h4>¿Tienen cambio?</h4>
+                    <p>Siempre y cuando haya disponibilidad, se puede cambiar de fecha</p>
+                </p>
+            </div>
+            
+        </div>
+        <div class="d-flex flex-wrap mt-5">
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2 mt-2 mr-2 mb-2">
                 <div class="card-header">
                     Ciudad de Mendoza
