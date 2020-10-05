@@ -44,7 +44,7 @@
               <a class="nav-link active pills" id="precio-tab" data-toggle="pill" href="#precio" role="tab" aria-controls="precio" aria-selected="true">Precios</a>
             </li>
             <li class="nav-item mr-2" role="presentation">
-              <a class="nav-link pills" id="pago-tab" data-toggle="pill" href="#pago" role="tab" aria-controls="pago" aria-selected="false">Formas de Pago</a>
+              <a class="nav-link pills" id="pago-tab" data-toggle="pill" href="#pago" role="tab" aria-controls="pago" aria-selected="false">Métodos de Pago</a>
             </li>
             <li class="nav-item" role="presentation">
               <a class="nav-link pills" id="comentario-tab" data-toggle="pill" href="#comentario" role="tab" aria-controls="comentario" aria-selected="false">Comentario</a>
@@ -131,30 +131,104 @@
             <div class="tab-pane fade" id="pago" role="tabpanel" aria-labelledby="pago-tab">
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2 mb-2">
                     <div class="card-header">
-                        <h2 class="card-title flex-column justify-content-between">Formas de Pago</h2>
+                        <h2 class="card-title flex-column justify-content-between">Métodos de Pago</h2>
                     </div>
                     <div class="card-body">
-                        <div class="form-check mt-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                              <h5 class="font-weight-light">Visa - (hasta 12 cuotas sin interés)</h5>
-                            </label>
+                        <div class="accordion" id="accordionPagos">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h4 class="font-weight-light">Tarjeta Master Card</h4>
+                                    <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Ver cuotas aceptadas
+                                    </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionPagos">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cuotasMaster" id="radioMaster1" value="opcionMaster1">
+                                            <label class="form-check-label" for="radioMaster1">
+                                                <h6 class="font-weight-light">12 cuotas sin interés</h6>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cuotasMaster" id="radioMaster2" value="opcionMaster2">
+                                            <label class="form-check-label" for="radioMaster2">
+                                                <h6 class="font-weight-light">6 cuotas sin interés</h6>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cuotasMaster" id="radioMaster3" value="opcionMaster3">
+                                            <label class="form-check-label" for="radioMaster3">
+                                                <h6 class="font-weight-light">3 cuotas sin interés</h6>
+                                            </label>
+                                        </div>
+                                        <button class="btn btn-card" type="button">Pagar con Master Card</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h4 class="font-weight-light">Tarjeta Visa</h4> 
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Ver cuotas aceptadas
+                                        </button> 
+                                    </h2>  
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionPagos">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cuotasVisa" id="radioVisa1" value="opcionVisa1">
+                                            <label class="form-check-label" for="radioVisa1">
+                                            <h6 class="font-weight-light">12 cuotas sin interés</h6>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cuotasVisa" id="radioVisa2" value="opcionVisa2">
+                                            <label class="form-check-label" for="radioVisa2">
+                                            <h6 class="font-weight-light">6 cuotas sin interés</h6>
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="cuotasVisa" id="radioVisa3" value="opcionVisa3">
+                                            <label class="form-check-label" for="radioVisa3">
+                                            <h6 class="font-weight-light">3 cuotas sin interés</h6>
+                                            </label>
+                                        </div>
+                                        <button class="btn btn-card" type="button">Pagar con Visa</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <h4 class="font-weight-light">Efectivo</h4>
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Ver método de pago
+                                    </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionPagos">
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pagoEfectivo" id="radioPagoEfectivo1" value="opcionTransf">
+                                        <label class="form-check-label" for="radioPagoEfectivo1">
+                                        <h6 class="font-weight-light">Transferencia Bancaria - 1 cuota</h6>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pagoEfectivo" id="radioPagoEfectivo2" value="opcionDeposito">
+                                        <label class="form-check-label" for="radioPagoEfectivo2">
+                                        <h6 class="font-weight-light">Depósito Bancario - 1 cuota</h6>
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-card" type="button">Pagar en efectivo</button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                            <label class="form-check-label" for="exampleRadios2">
-                              <h5 class="font-weight-light">MasterCard - (hasta 12 cuotas sin interés)</h5>
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                            <label class="form-check-label" for="exampleRadios3">
-                              <h5 class="font-weight-light">Efectivo - (en un pago)</h5>
-                            </label>
-                          </div>
-                    </div>
-                    <div>
-                        <button class="btn-card btn">Pagar</button>
                     </div>
                 </div>  
             </div>
