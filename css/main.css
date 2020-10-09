@@ -86,6 +86,27 @@
     background-color: #1d2d50;
     color: white;
 }
+.btn-cardContacto{
+    background-color: #1e5f74;
+    color: white;
+    width: 100%;
+    border-radius: 0;
+}
+.btn-cardContacto:hover{
+    background-color: #1d2d50;
+    color: white;
+}
+.btn-cardActivo{
+    background-color: #fff;
+    color: black;
+    border: solid 1px black;
+    width: 100%;
+    border-radius: 0;
+}
+.btn-cardActivo:hover{
+    background-color: #1d2d50;
+    color: white;
+}
 .pie{
     display: flex;
     width: 100%;
