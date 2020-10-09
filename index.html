@@ -121,7 +121,7 @@
                 <div class="card-body">
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Informacion adicional del producto">Diplomatic Hotel<span class="badge badge-primary ml-2">Nuevo</span></h5>
                     <p class="card-text text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, a sunt assumenda illo laudantium numquam possimus voluptatem vitae dolore aliquam? Sit ullam qui cum vel deserunt beatae et, reiciendis nihil?</p>
-                    <button class="btn-card btn contacto-btn" data-toggle="modal" data-target="#contacto" id="contacto1">Contacto</button>
+                    <button type="button" class="btn-card btn contacto-btn" data-toggle="modal" data-target="#contacto" id="contacto1">Contacto</button>
                 </div>
                 <div class="card-body parte-imagen">
                     <img src="img/hotel1.jpg" alt="hotel-1" class="card-img">
@@ -339,36 +339,34 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
+        
         $(function(){
             $("[data-toogle='tooltip']").tooltip();
             $('[data-toggle="popover"]').popover();
             $('.carousel').carousel({
                 interval: 4000
             });
-            ////////////////////////////////////////////////////
-            $('#contacto').on('show.bs.modal', function (e){
-                event.stopPropagation();
-                event.stopImmediatePropagation();
-                console.log('El modal se está mostrando');
-                $('.contacto-btn').removeClass('btn-cardContacto');
-                $('.contacto-btn').addClass('btn-cardActivo');
-                $('.contacto-btn').prop('disabled', true);
-                
+            $('.contacto-btn').click(function(){
+                console.log(this.id);
+                $('#' + this.id).removeClass('btn-cardContacto');
+                $('#' + this.id).addClass('btn-cardActivo');
             })
-            $('#contacto').on('shown.bs.modal', function (e){
-                console.log('El modal se mostró');
-            })
-            $('#contacto').on('hide.bs.modal', function (e){
-                event.stopPropagation();
-                event.stopImmediatePropagation();
-                console.log('El modal se está ocultando');
-                $('.contacto-btn').removeClass('btn-cardActivo');
-                $('.contacto-btn').addClass('btn-cardContacto');
-                $('.contacto-btn').prop('disabled', false);
-            })
-            $('#contacto').on('hidden.bs.modal', function (e){
-                console.log('El modal se ocultó');
-            })
+                $('#contacto').on('show.bs.modal', function (e){
+                    console.log('El modal se está mostrando');
+                    $('.contacto-btn').prop('disabled', true);
+                });
+                $('#contacto').on('shown.bs.modal', function (e){
+                    console.log('El modal se mostró');
+                });
+                $('#contacto').on('hide.bs.modal', function (e){
+                    console.log('El modal se está ocultando');
+                    $('.contacto-btn').prop('disabled', false);
+                });
+                $('#contacto').on('hidden.bs.modal', function (e){
+                    console.log('El modal se ocultó');
+                });
+        });
+        
            /////////////////////////////////////////////////////////
 
            /* $('#contacto').on('shown.bs.modal', function (e){
@@ -387,7 +385,7 @@
                 $('.contacto-btn').prop('disabled', false);
                 $('#nuevaId').attr('id',' ');
             })*/
-        });
+        
     </script>
   </body>
 </html>
