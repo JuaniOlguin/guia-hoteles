@@ -1,0 +1,169 @@
+$azul-fondo-oscuro: #133b5c;
+$azul-oscuro-hovers: #1d2d50;
+$blanco-letras: white;
+$blanco-fondo-cuerpo: #d9ecf2;
+$azul-botones: #1e5f74;
+
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin paddings($top, $right, $bottom, $left){
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+.navbar{
+    background-color: $azul-fondo-oscuro;
+    width:100%;
+}
+.navbar a,li{
+    color:$blanco-letras;
+}
+.jumbotron{
+    background-color: $azul-fondo-oscuro;
+    color: $blanco-letras;
+    margin-bottom: 0;
+    padding-top: 100px;
+    width: 100%;
+    border-radius: 0;
+}
+.carousel{
+    height: 60vh;
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,0.8);
+}
+.nav-item a,li {
+    color: rgb(46, 46, 46);
+}
+
+.imagen-carousel{
+    object-fit: cover;
+    min-height: 60vh;
+    max-height: 60vh;
+}
+.cuerpo{
+    background-color: $blanco-fondo-cuerpo;
+    margin: 0px auto;
+    @include paddings(80px, 20px, 40px, 20px);
+    height: auto;
+}
+.cuerpo1{
+    background-color: $blanco-fondo-cuerpo;
+    margin: 0px auto;
+    padding-top: 10px;
+    height: auto;
+}
+.visita-oficinas{
+    padding-top: 40px;
+    margin-bottom: 180px;
+}
+.cuerpo2{
+    display: flex;
+    background-color: $blanco-fondo-cuerpo;
+    width: 100%;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(/img/imagen-oficinas.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: $blanco-letras;
+    align-items: center;
+    justify-content: center;
+    
+}
+.breadcrumb-item a{
+    color: $azul-fondo-oscuro
+}
+.parte-imagen{
+    padding: 0;
+}
+.card-img{
+    min-height: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 0;
+}
+.card-hotel{
+    flex: 1 300px;
+}
+.btn-card{
+    background-color: $azul-botones;
+    color: $blanco-letras;
+    width: 100%;
+    border-radius: 0;
+}
+.btn-card:hover{
+    background-color: $azul-oscuro-hovers;
+    color: $blanco-letras;
+}
+.btn-cardContacto{
+    background-color: $azul-botones;
+    color: $blanco-letras;
+    width: 100%;
+    border-radius: 0;
+}
+.btn-cardContacto:hover{
+    background-color: $azul-oscuro-hovers;
+    color: $blanco-letras;
+}
+.btn-cardActivo{
+    background-color: $blanco-letras;
+    color: black;
+    border: solid 1px black;
+    width: 100%;
+    border-radius: 0;
+}
+.btn-cardActivo:hover{
+    background-color: $azul-oscuro-hovers;
+    color: $blanco-letras;
+}
+.pie{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $azul-fondo-oscuro;
+    align-items: center;
+}
+/*.pie-about{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #133b5c;
+    align-items: center;
+}*/
+.contRedes{
+    color: $blanco-letras;
+    @include paddings(10px, 10px, 10px, 10px);
+    @include margenes(10px, 0px);
+}
+.redes{
+    text-decoration: none;
+    color: $blanco-letras;
+}
+.redes:hover{
+    color:$blanco-letras;
+}
+.nav-pills .nav-link{
+    background-color: $azul-botones;
+    color:$blanco-letras;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: $blanco-letras;
+    background-color: $azul-oscuro-hovers;
+}
+.thead{
+    background-color: $azul-botones;
+    color: $blanco-letras;
+}
+.tab-content{
+    @include paddings(10px, 0px, 0px, 0px);
+}

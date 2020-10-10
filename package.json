@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
@@ -15,13 +16,14 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/juani_olguin/guia-hoteles#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
   },
   "dependencies": {
-    "jquery": "^3.5.1",
     "@popperjs/core": "^2.5.3",
-    "popper.js": "^1.16.1",
     "bootstrap": "^4.5.2",
-    "open-iconic": "^1.1.1"
+    "jquery": "^3.5.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.16.1"
   }
 }
