@@ -8,7 +8,11 @@
     "dev": "lite-server",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss ",
-    "start": "concurrently \"npm run watch:scss\" \"npm run dev\""
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* --out-dir dist/img",
+    "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin true && usemin about.html -d dist -o dist/about.html --htmlmin true && usemin contacto.html -d dist -o dist/contacto.html --htmlmin true && usemin precios.html -d dist -o dist/precios.html --htmlmin true && usemin soporte.html -d dist -o dist/soporte.html --htmlmin true",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -18,10 +22,15 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/juani_olguin/guia-hoteles#readme",
   "devDependencies": {
+    "copyfiles": "^2.4.0",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.5.3",

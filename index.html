@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-
+    <!-- endbuild -->
     <title>Inicio - Guía Hoteles</title>
   </head>
   <body>
@@ -88,7 +88,7 @@
                 <button class="btn btn-card" type="button" data-toggle="collapse" data-target="#reservo" aria-controls="multiCollapse2">¿Dónde reservo?</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-card" type="button" data-toggle="collapse" data-target="#vence" aria-controls="multiCollapse3">¿Dónde reservo?</button>
+                <button class="btn btn-card" type="button" data-toggle="collapse" data-target="#vence" aria-controls="multiCollapse3">¿Tienen cambio?</button>
             </div>
             
         </div>
@@ -332,8 +332,7 @@
         </div>
     </footer>
  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/index.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -367,25 +366,7 @@
                 });
         });
         
-           /////////////////////////////////////////////////////////
-
-           /* $('#contacto').on('shown.bs.modal', function (e){
-                console.log('El modal se está mostrando');
-                
-                $('.contacto-btn').attr('id','nuevaId');
-                
-                $('#nuevaId').removeClass('btn-cardContacto');
-                $('#nuevaId').addClass('btn-cardActivo');
-                $('#nuevaId').prop('disabled', true);
-                
-                
-            })
-            $('#contacto').on('hide.bs.modal', function (e){
-                console.log('El modal se está ocultando');
-                $('.contacto-btn').prop('disabled', false);
-                $('#nuevaId').attr('id',' ');
-            })*/
-        
     </script>
+    <!-- endbuild -->
   </body>
 </html>
