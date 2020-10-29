@@ -332,41 +332,11 @@
         </div>
     </footer>
  
-    <!-- build:js dist/index.js -->
+    <!-- build:js dist/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        
-        $(function(){
-            $("[data-toogle='tooltip']").tooltip();
-            $('[data-toggle="popover"]').popover();
-            $('.carousel').carousel({
-                interval: 4000
-            });
-            $('.contacto-btn').click(function(){
-                console.log(this.id);
-                $('#' + this.id).removeClass('btn-cardContacto');
-                $('#' + this.id).addClass('btn-cardActivo');
-            })
-                $('#contacto').on('show.bs.modal', function (e){
-                    console.log('El modal se está mostrando');
-                    $('.contacto-btn').prop('disabled', true);
-                });
-                $('#contacto').on('shown.bs.modal', function (e){
-                    console.log('El modal se mostró');
-                });
-                $('#contacto').on('hide.bs.modal', function (e){
-                    console.log('El modal se está ocultando');
-                    $('.contacto-btn').prop('disabled', false);
-                });
-                $('#contacto').on('hidden.bs.modal', function (e){
-                    console.log('El modal se ocultó');
-                });
-        });
-        
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
   </body>
 </html>

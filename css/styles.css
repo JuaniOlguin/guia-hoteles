@@ -1,9 +1,11 @@
 .navbar {
   background-color: #133b5c;
-  width: 100%; }
+  width: 100%;
+}
 
 .navbar a, li {
-  color: white; }
+  color: white;
+}
 
 .jumbotron {
   background-color: #133b5c;
@@ -11,21 +13,26 @@
   margin-bottom: 0;
   padding-top: 100px;
   width: 100%;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 .carousel {
-  height: 60vh; }
+  height: 60vh;
+}
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
 .nav-item a, li {
-  color: #2e2e2e; }
+  color: #2e2e2e;
+}
 
 .imagen-carousel {
   object-fit: cover;
   min-height: 60vh;
-  max-height: 60vh; }
+  max-height: 60vh;
+}
 
 .cuerpo {
   background-color: #d9ecf2;
@@ -34,17 +41,20 @@
   padding-right: 20px;
   padding-bottom: 40px;
   padding-left: 20px;
-  height: auto; }
+  height: auto;
+}
 
 .cuerpo1 {
   background-color: #d9ecf2;
   margin: 0px auto;
   padding-top: 10px;
-  height: auto; }
+  height: auto;
+}
 
 .visita-oficinas {
   padding-top: 40px;
-  margin-bottom: 180px; }
+  margin-bottom: 180px;
+}
 
 .cuerpo2 {
   display: flex;
@@ -55,60 +65,72 @@
   height: 100vh;
   color: white;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .breadcrumb-item a {
-  color: #133b5c; }
+  color: #133b5c;
+}
 
 .parte-imagen {
-  padding: 0; }
+  padding: 0;
+}
 
 .card-img {
   min-height: 250px;
   max-height: 250px;
   object-fit: cover;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 .card-hotel {
-  flex: 1 300px; }
+  flex: 1 300px;
+}
 
 .btn-card {
   background-color: #1e5f74;
   color: white;
   width: 100%;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 .btn-card:hover {
   background-color: #1d2d50;
-  color: white; }
+  color: white;
+}
 
 .btn-cardContacto {
   background-color: #1e5f74;
   color: white;
   width: 100%;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 .btn-cardContacto:hover {
   background-color: #1d2d50;
-  color: white; }
+  color: white;
+}
 
 .btn-cardActivo {
   background-color: white;
   color: black;
   border: solid 1px black;
   width: 100%;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 .btn-cardActivo:hover {
   background-color: #1d2d50;
-  color: white; }
+  color: white;
+}
 
 .pie {
   display: flex;
   width: 100%;
   margin: 0 auto;
   background-color: #133b5c;
-  align-items: center; }
+  align-items: center;
+}
 
 /*.pie-about{
     position: absolute;
@@ -126,29 +148,38 @@
   padding-bottom: 10px;
   padding-left: 10px;
   margin-top: 10px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 .redes {
   text-decoration: none;
-  color: white; }
+  color: white;
+}
 
 .redes:hover {
-  color: white; }
+  color: white;
+}
 
 .nav-pills .nav-link {
   background-color: #1e5f74;
-  color: white; }
+  color: white;
+}
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: white;
-  background-color: #1d2d50; }
+  background-color: #1d2d50;
+}
 
 .thead {
   background-color: #1e5f74;
-  color: white; }
+  color: white;
+}
 
 .tab-content {
   padding-top: 10px;
   padding-right: 0px;
   padding-bottom: 0px;
-  padding-left: 0px; }
+  padding-left: 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */
